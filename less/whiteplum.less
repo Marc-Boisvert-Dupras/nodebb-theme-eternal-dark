@@ -83,6 +83,9 @@ h1 small, .h1 small {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 500;
 }
+.forum-stats .stats-card h2 {
+  margin-top: 10px;
+}
 .stats {
     font-size: 20px;
     text-align: center;
@@ -114,7 +117,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-top: 5px;
 }
 a.permalink, a.permalink:hover, a.permalink:focus, a.permalink:active {
-    color: #777;
+    color: @brand-gold;
     text-decoration: underline;
 }
 .test {
@@ -166,6 +169,18 @@ a.permalink, a.permalink:hover, a.permalink:focus, a.permalink:active {
     }
 }
 
+
+// ---- Chat modal tweaks
+
+.chat-modal .chat-content li.chat-message {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chat-modal .chat-content li.chat-message .chat-user-image {
+  display: inline;
+  border-radius: 50%;
+}
 // ---- Jumbotron
 
 .jumbotron {
