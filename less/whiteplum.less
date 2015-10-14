@@ -1,0 +1,304 @@
+/*!
+ * White Plum v0.3.0
+ *
+ * Copyright 2013 Divshot, Inc.
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * This theme was built using the Themestrap Bootstrap Theme Kit.
+ * https://github.com/divshot/themestrap
+ */
+
+@import url(//fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+
+.box-shadow(@style) {
+  -webkit-box-shadow: @style;
+  -moz-box-shadow: @style;
+  box-shadow: @style
+}
+
+// ---- Typography
+
+body {
+  font-weight: 400;
+}
+
+.lead {
+  font-weight: 300;
+}
+
+pre {
+  color: white;
+}
+
+h1 small, .h1 small {
+  font-weight: 500;
+  color: lighten(@brand-primary, 10%);
+}
+
+// ---- Custom CSS Import
+
+.categories-title {
+    text-transform: uppercase;
+    color: #777;
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+}
+.categories, .category>ul {
+    list-style-type: none;
+    padding: 0;
+}
+.categories>li, .category>ul>li {
+    margin-bottom: 20px;
+    min-height: 53px;
+}
+.categories>li .content, .category>ul>li .content {
+    margin-top: 7px;
+}
+.categories>li .content .icon, .category>ul>li .content .icon {
+    font-size: 17px;
+    line-height: 17px;
+    padding: 13px 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+    min-width: 46px;
+    min-height: 46px;
+    margin-top: -2px;
+}
+.categories>li .content h2, .category>ul>li .content h2 {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0;
+    margin-left: 62px;
+    width: 85%;
+}
+.category h2.title p, .categories h2.title p, .subcategory h2.title p {
+    font-size: 65%;
+    font-weight: normal;
+    line-height: 1;
+    color: @brand-gold;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 500;
+}
+.stats {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 7px;
+    line-height: 22px;
+}
+.stats small {
+    text-transform: uppercase;
+    color: #777;
+    font-weight: 300;
+    font-size: 12px;
+}
+.categories>li .card, .category>ul>li .card {
+    border-left: 4px solid #ccc;
+    text-align: left;
+    margin-top: 2px;
+    overflow: hidden;
+    height: 53px;
+}
+.categories>li .card>*, .category>ul>li .card>* {
+    padding-left: 20px;
+}
+.categories>li .card p, .category>ul>li .card p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.topic-title hr {
+    margin-top: 5px;
+}
+a.permalink, a.permalink:hover, a.permalink:focus, a.permalink:active {
+    color: #777;
+    text-decoration: underline;
+}
+.test {
+    display:inline-block;
+    width: 49.2%;
+    margin-bottom: 10px !important;
+    padding: 60px 0 14px !important;
+    background: #000;
+    color: #fff !important;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24), 0 0 0 1000px rgba(0,0,0,0.2) inset;
+    transition: box-shadow 0.2s ease-in-out !important;
+}
+.test:hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24), 0 0 0 1000px rgba(0,0,0,0.5) inset;
+    transition: box-shadow 0.2s ease-in-out !important;
+}
+.test h2.title p {
+    color: rgba(255,255,255,0.75);
+}
+.test h2.title a {
+    color: #fff !important;
+}
+.test h2.title a:hover {
+    color: #eee !important;
+}
+.test .teaser,
+.test .stats{
+    display:none;
+}
+.exode {
+    margin-right:13px;
+    background: url(http://i.imgur.com/bspPENq.jpg) no-repeat center 70%;
+}
+.edn {
+    background: url(http://pre05.deviantart.net/71d4/th/pre/i/2012/276/3/c/dragon_nest_by_sinto_risky-d5go7ir.jpg) no-repeat center 50%;
+}
+
+.btn-default:hover {
+  background-color: lighten(@btn-default-bg, 10%) !important;
+}
+
+// ---- Mention <a> fix
+
+.plugin-mentions-a {
+    color: @brand-primary !important;
+    &:hover {
+      color: lighten(@brand-primary, 10%) !important;
+    }
+}
+
+// ---- Jumbotron
+
+.jumbotron {
+  .btn-primary {
+    background-color: darken(@brand-primary, 7%);
+  }
+
+  p {
+    font-weight: 300;
+  }
+}
+
+// ---- Navs
+
+.nav-pills > li.active > a, .nav-pills > li > a:hover {
+  border-radius: 0;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
+  border-top: 2px solid @brand-primary;
+}
+
+// ---- Navbar
+
+.navbar {
+  .box-shadow(0px 1px 6px rgba(0,0,0,0.15));
+}
+
+.navbar-static-top, .navbar-fixed-top {
+  // border-top: 2px solid @brand-primary;
+  .box-shadow(0px -3px 12px rgba(0,0,0,0.5));
+}
+
+.navbar-fixed-bottom {
+  border-bottom: 2px solid @brand-primary;
+  .box-shadow(0px 3px 12px rgba(0,0,0,0.5));
+}
+
+// ---- Buttons
+
+.btn {
+  font-weight: 500;
+}
+
+.btn-default:hover {
+  color: @gray;
+  background-color: lighten(@brand-primary, 40%);
+}
+
+// ---- Labels
+
+.label {
+  border-radius: .25em;
+}
+
+// ---- Pagination
+
+.pagination > li > a {
+  border-width: 0;
+  border-bottom-width: 3px;
+
+  &:first-child {
+    border-left-width: 0;
+  }
+}
+
+// ---- Panels
+
+.panel {
+  border-radius: 0 0 3px 3px;
+  border-width: 0;
+  border-top-width: 3px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.panel-default {
+  border-top-color: @brand-primary;
+}
+
+.panel-heading {
+  background: transparent !important;
+  border-bottom-color: @gray-brand-dark !important;
+
+  .panel-title {
+    color: #fafafa;
+  }
+}
+
+.panel-footer {
+  background: transparent;
+  border-top-color: @gray-lighter;
+}
+
+// ---- Progress Bars
+
+.progress {
+  .box-shadow(0 -1px 0px rgba(0,0,0,0.1) inset);
+}
+
+// ---- Fade-out
+.fade-out {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(1, @gray-brand-medium));
+    background-image: -webkit-linear-gradient(top, rgba(255,255,255,0), @gray-brand-medium);
+    background-image: -moz-linear-gradient(top, rgba(255,255,255,0), @gray-brand-medium);
+    background-image: -ms-linear-gradient(top, transparent, @gray-brand-medium);
+    background-image: -o-linear-gradient(top, transparent, @gray-brand-medium);
+}
+
+// ---- Table fix
+.topic .table th, .topic .table td {
+    border: 1px solid @gray-brand-dark !important;
+}
+
+// ---- Composer hax
+.composer {
+    background: white;
+    color: @gray-dark;
+
+    .btn-info {
+      background: @brand-primary;
+      border-color: @brand-primary;
+    }
+
+    .open>.dropdown-toggle.btn-info {
+      background: @brand-primary;
+      border-color: @brand-primary;
+    }
+
+    .caret {
+      color: #fff !important;
+    }
+}
+
+.composer .title-container .title {
+    color: @gray-dark;
+}

@@ -1,0 +1,8 @@
+{
+    "id": "nodebb-theme-eternal-dark",
+    "name": "Eternal Dark",
+    "description": "Fork of nodebb-theme-lavender for the purposes of Eternal Games.",
+    "url": "http://forums.eternalgames.net/",
+    "screenshot": "screenshot.png",
+    "baseTheme": "nodebb-theme-vanilla"
+}
