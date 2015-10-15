@@ -20,7 +20,8 @@
 										<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">
 											<img src="{posts.user.picture}" alt="{posts.user.username}" class="profile-image user-img" title="{posts.user.username}">
 										</a>
-										<small class="username" title="{posts.user.username}"><a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">{posts.user.username}</a></small>
+
+										<small class="username" title="{posts.user.username}"><a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" <!-- IF posts.user.groups.length --> <!-- BEGIN groups --> <!-- IF ../selected --> <!-- IF ../userTitleEnabled --> style="color: {../labelColor};text-shadow:0 0 0.7em {../labelColor};" <!-- ENDIF ../userTitleEnabled --> <!-- ENDIF ../selected -->  <!-- END groups --> <!-- ELSE --> style="color:#ddd;" <!-- ENDIF posts.user.groups.length --> >{posts.user.username}</a></small>
 
 										<!-- IF posts.user.banned -->
 										<div class="text-center">
@@ -149,4 +150,3 @@
 	<!-- IMPORT partials/paginator.tpl -->
 </noscript>
 <!-- ENDIF !config.usePagination -->
-

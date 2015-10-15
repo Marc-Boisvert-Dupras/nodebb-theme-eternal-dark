@@ -1,12 +1,12 @@
-<div class="col-lg-9">	
+<div class="col-lg-9">
 	<div class="panel panel-default">
-		<div class="panel-heading">Lavender Theme Settings</div>
+		<div class="panel-heading">Eternal Theme Settings</div>
 		<div class="panel-body">
 			<form>
 				<label>Disable Masonry
 					<input id="disableMasonry" type="checkbox" data-field="disableMasonry" />
 				</label>
-				
+
 			</form>
 		</div>
 	</div>
