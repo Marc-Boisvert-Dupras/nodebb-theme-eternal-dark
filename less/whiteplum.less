@@ -324,6 +324,24 @@ div.account {
   margin-bottom: 20px;
 }
 
+// ---- Search btn fix
+
+.navbar-form {
+  margin:0;
+  padding: 0;
+  .form-group {
+    margin: 10px 0;
+  }
+}
+
+button#search-button {
+  padding: 15px;
+  border: 0;
+  &:hover {
+    background-color: @navbar-default-link-hover-bg;
+  }
+}
+
 // ---- Input group-addon fix
 
 .input-group-addon:last-child {
@@ -341,7 +359,7 @@ div.account {
 .tag-item {
   position: relative;
   height: 1.5em;
-  padding: .6em 3em .7em 1em;
+  padding: .6em 2.7em .7em 1em;
   background-color: rgba(255,255,255,0.1);
   border: none;
   border-radius: 16px;
@@ -355,7 +373,30 @@ div.account {
   margin-left: 10px;
   border-radius:50%;
   font-size:10px;
+  background: @brand-gold;
+  border-color: @brand-gold;
   color:#fff;
   line-height:11px;
   text-align:center;
+}
+
+// ---- Status colours
+
+.status {
+
+	&.online {
+		color: #2ecc71;
+	}
+
+	&.away {
+		color: #ffb800;
+	}
+
+	&.dnd {
+		color: #C1423D;
+	}
+
+	&.offline {
+		color: #fafafa;
+	}
 }

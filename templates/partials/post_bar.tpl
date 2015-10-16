@@ -2,7 +2,7 @@
 
 	<span class="tags">
 	<!-- BEGIN tags -->
-	<a href="{config.relative_path}/tags/{tags.value}"><span class="tag-item" data-tag="{tags.value}" style="<!-- IF tags.color -->color: {tags.color};<!-- ENDIF tags.color --><!-- IF tags.bgColor -->background-color: {tags.bgColor};<!-- ENDIF tags.bgColor -->">{tags.value}<span class="tag-topic-count">{tags.score}</span></span></a>
+	<a href="{config.relative_path}/tags/{tags.value}"><span class="tag-item" style="font-size:10.2px;" data-tag="{tags.value}" style="<!-- IF tags.color -->color: {tags.color};<!-- ENDIF tags.color --><!-- IF tags.bgColor -->background-color: {tags.bgColor};<!-- ENDIF tags.bgColor -->">{tags.value}<span class="tag-topic-count">{tags.score}</span></span></a>
 	<!-- END tags -->
 	</span>
 

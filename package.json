@@ -1,11 +1,11 @@
 {
   "name": "nodebb-theme-eternal-dark",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Eternal Dark Theme for NodeBB",
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NodeBB/nodebb-theme-lavender"
+    "url": "https://github.com/Marc-Boisvert-Dupras/nodebb-theme-eternal-dark"
   },
   "keywords": [
     "nodebb",
@@ -19,7 +19,7 @@
   },
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/NodeBB/nodebb-theme-lavender/issues"
+    "url": "https://github.com/Marc-Boisvert-Dupras/nodebb-theme-eternal-dark/issues"
   },
   "nbbpm": {
     "compatibility": "^0.9.0"
