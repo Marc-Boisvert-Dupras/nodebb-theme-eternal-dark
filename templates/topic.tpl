@@ -3,6 +3,11 @@
 
 	<div component="topic/deleted/message" class="alert alert-warning<!-- IF !deleted --> hidden<!-- ENDIF !deleted -->">[[topic:deleted_message]]</div>
 
+	<h3 class="topic-title">
+		<span class="label label-default <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->">PINNED</span> <span class="label label-warning <!-- IF !locked -->hidden<!-- ENDIF !locked -->">LOCKED</span>
+		<p component="post/header" class="topic-title" itemprop="name"> <span component="topic/title">{title}</span></p>
+	</h3>
+
 	<ul component="topic" id="post-container" class="posts" data-tid="{tid}">
 		<!-- BEGIN posts -->
 			<li component="post" class="<!-- IF posts.deleted -->deleted<!-- ENDIF posts.deleted -->" <!-- IMPORT partials/data/topic.tpl -->>
@@ -32,12 +37,6 @@
 										<!-- IMPORT partials/topic/badge.tpl -->
 									</div>
 									<div class="topic-text">
-										<!-- IF @first -->
-										<h3 class="topic-title">
-											<p component="post/header" class="topic-title" itemprop="name"><i class="fa fa-thumb-tack <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->"></i> <i class="fa fa-lock <!-- IF !locked -->hidden<!-- ENDIF !locked -->"></i> <span component="topic/title">{title}</span></p>
-											<hr>
-										</h3>
-										<!-- ENDIF @first -->
 										<div component="post/content" class="post-content" itemprop="text">{posts.content}</div>
 										<!-- IF posts.user.signature -->
 										<div class="post-signature">{posts.user.signature}</div>
@@ -69,20 +68,20 @@
 									</small>
 
 									<div class="dropdown moderator-tools" component="post/tools">
-										<a href="#" data-toggle="dropdown"><i class="fa fa-fw fa-gear"></i></a>
+										<a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-fw fa-gear"></i></a>
 										<ul class="dropdown-menu" role="menu">
 											<!-- IMPORT partials/topic/post-menu.tpl -->
 										</ul>
 									</div>
 
 									<!-- IF !reputation:disabled -->
-									&bull;
-									<a component="post/upvote" href="#" class="upvote<!-- IF posts.upvoted --> upvoted<!-- ENDIF posts.upvoted -->">
+									&nbsp;
+									<a component="post/upvote" href="#" class="upvote<!-- IF posts.upvoted --> upvoted<!-- ENDIF posts.upvoted -->" title="Upvote">
 										<i class="fa fa-chevron-up"></i>
 									</a>
 									<span component="post/vote-count" class="votes" data-votes="{posts.votes}">{posts.votes}</span>
 									<!-- IF !downvote:disabled -->
-									<a component="post/downvote" href="#" class="downvote<!-- IF posts.downvoted --> downvoted<!-- ENDIF posts.downvoted -->">
+									<a component="post/downvote" href="#" class="downvote<!-- IF posts.downvoted --> downvoted<!-- ENDIF posts.downvoted -->" title="Downvote">
 										<i class="fa fa-chevron-down"></i>
 									</a>
 									<!-- ENDIF !downvote:disabled -->

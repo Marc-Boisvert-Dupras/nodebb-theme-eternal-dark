@@ -116,13 +116,6 @@
 		> li {
 			padding-bottom: 0px;
 			margin-bottom:0px;
-			.topic-title {
-				margin-top: 0px;
-				margin-bottom: 5px;
-				font-weight: 500;
-				color: @brand-primary;
-				display: none;
-			}
 		}
 
 		> li[data-index="0"] {
@@ -160,8 +153,9 @@
 	}
 
 	.topic-footer {
-	    margin-top: 15px;
-		border-top: none;
+	  margin-top: 15px;
+		background-color: darken(@gray-brand-medium, 1%);
+		border-top: 0;
 		border-bottom: 1px solid @gray-brand-dark;
 
 		.pull-right {
@@ -204,5 +198,20 @@
 	&.replying::after {
 		margin-left: 0px;
 		.animation(topic-reply-pulse 2s ease-in infinite);
+	}
+}
+
+.topic-title {
+	display: block;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-size: 44px;
+	font-weight: 700;
+	color: @text-color;
+
+	.label {
+		padding: .4em .6em;
+		font-size: 10px;
+		font-weight: 700;
 	}
 }

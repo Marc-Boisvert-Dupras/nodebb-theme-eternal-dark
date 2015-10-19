@@ -1,0 +1,34 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+
+.breadcrumb {
+  padding: @breadcrumb-padding-vertical @breadcrumb-padding-horizontal;
+  margin-bottom: @line-height-computed;
+  list-style: none;
+  background-color: @breadcrumb-bg;
+  border-radius: @border-radius-base;
+
+  > li {
+    display: inline-block;
+
+    + li:before {
+      content: "@{breadcrumb-separator}"; // Unicode space added since inline-block means non-collapsing white-space
+      padding: 0 3px 0 5px;
+      color: rgba(255,255,255,0.4);
+      display: inline-block;
+      font-family: FontAwesome;
+      font-size: 10px;
+      font-weight:normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transform:translateY(-1px);
+    }
+  }
+
+  > .active {
+    color: @breadcrumb-active-color;
+  }
+}
