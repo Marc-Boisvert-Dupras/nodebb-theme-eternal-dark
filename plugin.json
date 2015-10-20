@@ -1,5 +1,5 @@
 {
-	"id": "nodebb-theme-eternal-dark",
+	"id": "eternal-dark",
 	"library": "./lib/theme.js",
 	"hooks": [
 		{

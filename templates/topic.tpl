@@ -4,8 +4,12 @@
 	<div component="topic/deleted/message" class="alert alert-warning<!-- IF !deleted --> hidden<!-- ENDIF !deleted -->">[[topic:deleted_message]]</div>
 
 	<h3 class="topic-title">
-		<span class="label label-default <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->">PINNED</span> <span class="label label-warning <!-- IF !locked -->hidden<!-- ENDIF !locked -->">LOCKED</span>
-		<p component="post/header" class="topic-title" itemprop="name"> <span component="topic/title">{title}</span></p>
+		<span class="label label-default <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->">PINNED</span> <span class="label label-warning <!-- IF !locked -->hidden<!-- ENDIF !locked -->">LOCKED</span><br>
+		<p component="post/header" class="topic-title" itemprop="name"><span component="topic/title">{title}</span></p>
+		<span class="browsing-users pull-right hidden" style="margin-top:-60px;">
+			<small style="color:#fafafa;font-weight:300;vertical-align:sub;"><span>reading now</span></small>
+			<div component="topic/browsing/list" class="thread_active_users active-users inline-block" style="vertical-align:sub;"></div>
+		</span>
 	</h3>
 
 	<ul component="topic" id="post-container" class="posts" data-tid="{tid}">

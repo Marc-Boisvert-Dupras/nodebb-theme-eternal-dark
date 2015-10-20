@@ -164,7 +164,7 @@
 		}
 
 		.row {
-			padding: 10px 10px 10px 20px;
+			padding: 5px 10px 5px 20px;
 		}
 	}
 
@@ -190,6 +190,7 @@
 	}
 
 	&::after {
+		display: none;
 		z-index: 0;
 		margin-left: -24px;
 		.transition(~"opacity 250ms ease, margin-left 250ms ease");
@@ -203,9 +204,9 @@
 
 .topic-title {
 	display: block;
-	margin-top: 0px;
-	margin-bottom: 20px;
-	font-size: 44px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-size: 36px;
 	font-weight: 700;
 	color: @text-color;
 
@@ -214,4 +215,9 @@
 		font-size: 10px;
 		font-weight: 700;
 	}
+}
+
+p.topic-title {
+	display: block;
+	margin: 10px 0 50px;
 }

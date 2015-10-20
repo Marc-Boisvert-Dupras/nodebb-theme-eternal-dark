@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-eternal-dark",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Eternal Dark Theme for NodeBB",
   "main": "theme.less",
   "repository": {
@@ -10,6 +10,7 @@
   "keywords": [
     "nodebb",
     "eternal",
+    "dark",
     "theme",
     "themes"
   ],
